@@ -8,6 +8,8 @@ public class Main {
 
         int numberUser;
         
+        int attempts = 0;
+        
         int number = (int)Math.random() * 100;
 
         for(; ;){
@@ -15,9 +17,11 @@ public class Main {
             System.out.println("Digite um número inteiro: ");
             numberUser = scan.nextInt();
 
+            attempts++;
+
             if(numberUser == number){
 
-                System.out.println("Você Acertou!!!");
+                System.out.println("Você Acertou!!!\nNúmero de Tentativas: " + attempts);
                 break;
 
             }
