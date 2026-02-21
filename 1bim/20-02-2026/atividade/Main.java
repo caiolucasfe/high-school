@@ -10,7 +10,7 @@ public class Main {
         
         int attempts = 0;
         
-        int number = (int)Math.random() * 100;
+        int number = (int)(Math.random() * 100);
 
         for(; ;){
 
@@ -27,12 +27,12 @@ public class Main {
             }
             if(numberUser < number){
                 
-                System.out.println("Digite um número Menor\n");
+                System.out.println("Digite um número Maior\n");
 
             }
             else{
                 
-                System.out.println("Digite um número Maior\n");
+                System.out.println("Digite um número Menor\n");
 
             }
 
